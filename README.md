@@ -1,5 +1,7 @@
 # A game with 1 pixel
 
+![loveloop](https://i.ibb.co/tL1V7WS/loveloop.gif)
+
 The goal of this post is to answer a comment that I get quite frequently when I show my game: *Nice graphics, how did you did it ?*
 
 I will focus on my less common use of particles: to make game objects. I won't go into details about the particles that I use for explosions
@@ -12,7 +14,7 @@ So I've done everything trough code. Here is how:
 
 We will start with a simple example, the paddle:
 
-**Paddle screenshot**
+![paddle](https://i.ibb.co/s3fcPY1/paddle.gif)
 
 My paddle is composed the way I do every object: with 'smart particles'. 
 
@@ -36,6 +38,8 @@ I have a gameplay mechanic that goes like this: When a ball hits the paddle, the
 
 ### Movement
 
+![moving paddle](https://i.ibb.co/nLBDFfc/movingpaddle.gif)
+
 They also have other attributes such as the position they need to be, and their current offset from this position.
 
 When I need to move them, I always tell them where I want them to go, and let them go there "on their own". 
@@ -57,6 +61,8 @@ Once you've added this parameter, you can really make your particles come alive:
 A good example of those 'built in' transitions is the text. When a text object switch character, I will reuse as much particles of the previous char as possible and simply reassign them a new position.
 
 ## Random tidbits
+
+![dead pixels](https://i.ibb.co/cLgtC1s/deadpixels.png)
 
 - Use patterns. Like in most cases, they will make your blobs of particles feel more real. A few examples that I use: only move in 8 directions, color based animations, no angles, same color arrays, same sizes
 - Not so random: in most cases, a gaussian distribution for your random will make it feel more realistic 
