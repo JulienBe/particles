@@ -28,6 +28,8 @@ In the paddle example, is a 3 by 8 grid of particles.
 
 ### Color
 
+![paddle color](https://i.ibb.co/4YN7xGv/paddlecolor.gif)
+
 Each particles has an array of 7 colors and an index representing which color to pick from this array.
 
 The way the animation here work is by changing this index each frame
@@ -57,6 +59,8 @@ Once you've added this parameter, you can really make your particles come alive:
 - Add an angle to get varied animations
 - When an object changes color, change the color array of each particle one by one to get a transition
 - Have left over particles when a block dies that only light up when a ball is near 
+
+![numbers](https://i.ibb.co/RQ9fxz3/count.gif)
 
 A good example of those 'built in' transitions is the text. When a text object switch character, I will reuse as much particles of the previous char as possible and simply reassign them a new position.
 
