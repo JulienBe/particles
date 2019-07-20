@@ -56,10 +56,10 @@ Once you've added this parameter, you can really make your particles come alive:
 
 A good example of those 'built in' transitions is the text. When a text object switch character, I will reuse as much particles of the previous char as possible and simply reassign them a new position.
 
-# Tips and tricks
+## Random tidbits
 
-- Use patterns. Like in most cases, they will make your blobs of particles feel more real. A few examples that I use: only move in 8 directions, color based animations, no angles, same color arrays, 
+- Use patterns. Like in most cases, they will make your blobs of particles feel more real. A few examples that I use: only move in 8 directions, color based animations, no angles, same color arrays, same sizes
+- Not so random: in most cases, a gaussian distribution for your random will make it feel more realistic 
+- Cheat! I said that I am using a 1x1 white pixel, actually that's not true. To give a fake 3D effect, a lot of particles will use an image with a fake 3D drawn in gray
+- Layers: sometimes, it's useful to draw over something. That's how the bright cracks in the blocks are made. It's a very bright background that will show when a block particle moves slightly
 
-# Gaussian
-
-# Animation
